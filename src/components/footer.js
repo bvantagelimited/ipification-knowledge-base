@@ -10,7 +10,7 @@ const Footer = () => (
         
         <div className="three wide column text-center">
           <a
-            href="https://ipfication.com/"
+            href="https://ipification.com/"
             target="_blank"
             rel="noopener noreferrer"
           >

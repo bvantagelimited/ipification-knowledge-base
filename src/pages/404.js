@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Masthead from '../components/masthead'
-import ManualMenu from '../components/manual-menu'
+// import ManualMenu from '../components/manual-menu'
 import HelpUs from '../components/helpus'
 
 const NotFoundPage = () => (
@@ -13,7 +13,7 @@ const NotFoundPage = () => (
     <div className="ui container main-content">
       <div className="ui stackable grid">
         <div className="five wide column side-bar">
-          <ManualMenu sideMenu />
+          {/* <ManualMenu sideMenu /> */}
         </div>
         <div className="eleven wide column doc-content">
           <h1>NOT FOUND</h1>

@@ -29,7 +29,7 @@ export default class InfoMenu extends Component {
               </h3> */}
               <ul className="article-list">
                 {pages.map(page => {
-                  console.log(page)
+                  // console.log(page)
                   const { path, href, title } = page
                   return path ? (
                     <li key={path}>

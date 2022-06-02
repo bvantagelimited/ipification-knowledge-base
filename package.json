@@ -2,7 +2,7 @@
   "name": "ipification-knowledge",
   "private": true,
   "description": "IPification Knowledge Base",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "TN <tn@ipification.com>",
   "dependencies": {
     "@svgr/webpack": "^6.2.1",
@@ -47,14 +47,14 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "clean": "gatsby clean",
     "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "upload-live": "rsync -e 'ssh' -azP --delete site/public root@45.76.180.107:/var/www/ruounhapchinhhang.vn/public_html/",
+    "upload-live": "rsync -e 'ssh -p 2222' -azP --delete public centos@54.251.228.16:/home/ipification.com/knowledge_base/"
   },
   "repository": {
     "type": "git",
