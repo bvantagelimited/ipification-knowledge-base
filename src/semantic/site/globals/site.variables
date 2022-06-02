@@ -1,0 +1,14 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@headerFont: 'Inter', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
+@pageFont: 'Inter', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
+@useCustomScrollbars: false;
+
+@fontSize         : 14px;
+@pageBackground   : #f6f9fe;
+@linkColor        : #CC2020;
+@blue             : #3D7AED;
+@textColor        : #373e42;
+@headerFontWeight : 400;

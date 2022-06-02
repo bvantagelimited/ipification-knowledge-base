@@ -1,0 +1,66 @@
+{
+  "name": "ipification-knowledge",
+  "private": true,
+  "description": "IPification Knowledge Base",
+  "version": "0.1.0",
+  "author": "TN <tn@ipification.com>",
+  "dependencies": {
+    "@svgr/webpack": "^6.2.1",
+    "gatsby": "^4.15.2",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-catch-links": "^4.15.0",
+    "gatsby-plugin-fathom": "^2.1.1",
+    "gatsby-plugin-image": "^2.15.1",
+    "gatsby-plugin-less": "^6.15.0",
+    "gatsby-plugin-manifest": "^4.15.1",
+    "gatsby-plugin-react-helmet": "^5.15.0",
+    "gatsby-plugin-sharp": "^4.15.1",
+    "gatsby-plugin-svgr": "^3.0.0-beta.0",
+    "gatsby-remark-autolink-headers": "^5.15.1",
+    "gatsby-remark-classes": "^1.0.2",
+    "gatsby-remark-images": "^6.15.1",
+    "gatsby-remark-prismjs": "^6.15.0",
+    "gatsby-source-filesystem": "^4.15.0",
+    "gatsby-transformer-remark": "^5.15.1",
+    "gatsby-transformer-sharp": "^4.15.0",
+    "less": "^4.1.2",
+    "prismjs": "^1.28.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
+    "remark-html": "^15.0.1",
+    "semantic-ui-less": "^2.4.1",
+    "semantic-ui-react": "^2.1.3"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.16.5",
+    "babel-preset-gatsby": "^2.15.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.30.0",
+    "prettier": "^2.5.1"
+  },
+  "keywords": [
+    "gatsby",
+    "ipification",
+    "markdown"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop -H 0.0.0.0",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "upload-live": "rsync -e 'ssh' -azP --delete site/public root@45.76.180.107:/var/www/ruounhapchinhhang.vn/public_html/",
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
