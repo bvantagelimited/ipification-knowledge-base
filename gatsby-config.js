@@ -61,7 +61,7 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 600,
               quality: 100,
-              wrapperStyle: 'margin-left: 0px'
+              // wrapperStyle: 'margin-left: 0px'
             }
           }
         ]
