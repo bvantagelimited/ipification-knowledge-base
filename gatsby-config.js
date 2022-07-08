@@ -1,6 +1,6 @@
 module.exports = {
   pathPrefix: `/knowledge-base`,
-
+  trailingSlash: `never`,
   siteMetadata: {
     title: `IPification Documentation`,
     description: `IPification`,
@@ -18,19 +18,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-catch-links`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/company-profile`,
-        background_color: `#E71F00E6`,
-        theme_color: `#D70000`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png` // This path is relative to the root of the site.
-      }
-    },
+    
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

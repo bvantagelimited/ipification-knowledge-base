@@ -16,8 +16,8 @@ export default class MenuLink extends Component {
     const { to, children, ...props } = this.props
     
     if(typeof window !== 'undefined'){
-      console.log(((window.location) || {}).pathname, to)
-      console.log(((window.location) || {}).pathname.includes(to))
+      // console.log(((window.location) || {}).pathname, to)
+      // console.log(((window.location) || {}).pathname.includes(to))
         const isActive = ((window.location) || {}).pathname.includes(to) ? 'current-active' : 'normal'
         const className = (props.className || '') + ' ' + isActive
         return (
