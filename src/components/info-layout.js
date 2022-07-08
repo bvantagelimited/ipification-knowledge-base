@@ -17,6 +17,8 @@ export default class InfopageLayout extends Component {
     var isEn = true
     if(typeof window !== 'undefined'){
       isEn = ((window.location) || {}).pathname.includes("/es/") ? false: true
+    }else{
+      return <></>
     }
     return (
       <Layout pageTitle={this.props.currentPageTitle}>
