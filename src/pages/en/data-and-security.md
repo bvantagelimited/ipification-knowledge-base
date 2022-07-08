@@ -1,7 +1,7 @@
 ---
 index: 8
 category: info
-path: /data-and-security
+path: /en/data-and-security
 title: Data and security 
 ---
 

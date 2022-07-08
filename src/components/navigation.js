@@ -4,8 +4,12 @@ import React from 'react'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import './navigation.less'
 
-const Navigation = () => (
-  <Container className="app--navigation">
+const Navigation = () => {
+  var isEn = true
+  if(typeof window !== 'undefined'){
+    isEn = ((window.location) || {}).pathname.includes("/es/") ? false: true
+  }
+  return <Container className="app--navigation">
     <nav className="ui grid">
       <div className="row">
         <Link to="/" className="app--logo">
@@ -25,51 +29,27 @@ const Navigation = () => (
             render={data => (
               <GatsbyImage
                 image={data.placeholderImage.childImageSharp.gatsbyImageData}
+                alt="logo"
               />
             )}
           />
         </Link>
 
-        {/* <ul className="app--navbar reset-list un-select">
+        <ul className="app--navbar reset-list un-select">
+          
           <li>
-            <a href="https://inkdrop.app/">Home</a>
-          </li>
-          <li>
-            <a href="https://my.inkdrop.app/plugins">Plugins</a>
-          </li>
-          <li className="ui simple dropdown item">
-            More
-            <i className="dropdown icon" />
-            <div className="menu">
-              <a className="item" href="https://inkdrop.app/pricing">
-                Pricing
-              </a>
-              <Link className="item" to="/faq">
-                FAQ
-              </Link>
-              <div className="divider" />
-              <a className="item" href="https://forum.inkdrop.app/">
-                User Forum
-              </a>
-              <div className="divider" />
-              <a className="item" href="https://twitter.com/inkdrop_app">
-                Twitter
-              </a>
-              <a className="item" href="https://medium.com/@inkdrop">
-                Blog
-              </a>
-            </div>
-          </li>
-          <li>
-            <a href="https://my.inkdrop.app/" className="login">
-              <i className="sign in icon" />
-              Log in
-            </a>
-          </li>
-        </ul> */}
+           {isEn ? <a href="/es" className="login">
+              <i className="es_language" />
+              ES
+            </a> : <a href="/en" className="login">
+              <i className="en_language" />
+              ES
+            </a>}
+          </li> 
+        </ul>
       </div>
     </nav>
   </Container>
-)
+}
 
 export default Navigation

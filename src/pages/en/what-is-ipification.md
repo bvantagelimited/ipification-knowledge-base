@@ -1,7 +1,7 @@
 ---
 index: 3
 category: info
-path: /what-is-ipification
+path: /en/what-is-ipification
 title: What is IPification
 
 ---

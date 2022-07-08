@@ -10,12 +10,17 @@ export default class InfoMenu extends Component {
   }
 
   render() {
+    var isEn = true
+    if(typeof window !== 'undefined'){
+      isEn = ((window.location) || {}).pathname.includes("/es/") ? false: true
+    }
     return (
       <StaticQuery
-        query={menuQuery}
+        query={isEn ? menuQuery : menuQuery}
         render={data => {
+          var lData = isEn ? data.en : data.es
           const pages = [
-            ...data.allMarkdownRemark.edges.map(edge => ({
+            ...lData.edges.map(edge => ({
               path: edge.node.frontmatter.path,
               title: edge.node.frontmatter.title
             }))
@@ -52,10 +57,26 @@ export default class InfoMenu extends Component {
 
 const menuQuery = graphql`
   query {
-    allMarkdownRemark(
+    en : allMarkdownRemark(
       sort: { order: ASC, fields: [frontmatter___index] }
       limit: 1000
-      filter: { frontmatter: { category: { eq: "info" } } }
+      filter: { frontmatter: { category: { eq: "info" }, path: {regex: "/en//"} } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            index
+            path
+            title
+          }
+        }
+      }
+    }, 
+
+    es: allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___index] }
+      limit: 1000
+      filter: { frontmatter: { category: { eq: "info" }, path: {regex: "/es//"} } }
     ) {
       edges {
         node {
@@ -69,3 +90,5 @@ const menuQuery = graphql`
     }
   }
 `
+
+

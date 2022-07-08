@@ -1,7 +1,7 @@
 ---
 index: 9
 category: info
-path: /maintenance
+path: /en/maintenance
 title: Maintenance
 ---
 
