@@ -43,10 +43,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           property: `og:title`,
           content: title
         },
-        {
-          property: `og:image`,
-          content: `/og-cover-image.jpg`
-        },
+        // {
+        //   property: `og:image`,
+        //   content: `/og-cover-image.jpg`
+        // },
         {
           property: `og:image:width`,
           content: `1200`
@@ -83,10 +83,6 @@ function SEO({ description, lang, meta, keywords, title }) {
           name: `twitter:description`,
           content: metaDescription
         },
-        // {
-        //   name: `twitter:image`,
-        //   content: `https://beta.docs.inkdrop.app/og-cover-image.jpg`
-        // }
       ]
         .concat(
           keywords.length > 0
