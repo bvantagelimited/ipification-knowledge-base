@@ -1,6 +1,6 @@
 module.exports = {
   pathPrefix: `/knowledge-base`,
-  trailingSlash: `never`,
+  // trailingSlash: `never`,
   siteMetadata: {
     title: `IPification Documentation`,
     description: `IPification`,

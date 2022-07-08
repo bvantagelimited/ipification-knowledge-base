@@ -20,7 +20,7 @@ export default class Breadcrumb extends Component {
       <div className="app--breadcrumb">
         <div className="ui container">
           <div className="ui breadcrumb">
-            <Link to={isEn ? "/" : "/es"} className="section">
+            <Link to={isEn ? "/" : "/es/"} className="section">
               <i className="home icon" />
               Docs
             </Link>

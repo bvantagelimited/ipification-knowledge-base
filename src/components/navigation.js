@@ -37,13 +37,13 @@ const Navigation = () => {
 
         <ul className="app--navbar reset-list un-select">
         <li>
-          <Link to={"/en"} className="login">
+            <Link to={"/en/"} className="login">
               <i className="en_language" />
               EN
             </Link>
           </li>
           <li>
-          <Link to={"/es"} className="login">
+            <Link to={"/es/"} className="login">
               <i className="es_language" />
               ES
             </Link> 
