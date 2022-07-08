@@ -1,7 +1,7 @@
 ---
 index: 4
 category: info
-path: /en/ipification-for-merchant
+path: /en/ipification-for-merchant/
 title: IPification for Merchant
 ---
 

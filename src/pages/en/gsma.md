@@ -1,7 +1,7 @@
 ---
 index: 2
 category: info
-path: /en/gsma
+path: /en/gsma/
 title: GSMA
 ---
 

@@ -1,7 +1,7 @@
 ---
 index: 6
 category: info
-path: /en/implementation-requirements
+path: /en/implementation-requirements/
 title: Implementation Requirements
 ---
 

@@ -1,7 +1,7 @@
 ---
 index: 7
 category: info
-path: /en/operation-and-support
+path: /en/operation-and-support/
 title: Operation and Support
 ---
 

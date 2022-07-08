@@ -19,31 +19,7 @@ exports.onCreateWebpackConfig = ({ stage: _stage, actions }) => {
   })
 }
 
-exports.onPreBootstrap = async () => {
-  // async function createPageFromRemoteMd(url, pagePath, frontmatter, options) {
-  //   const res = await fetch(url)
-  //   const md = await res.text()
-  //   const fm = yaml.safeDump(frontmatter)
-  //   const { header } = options || {}
-  //   fs.writeFileSync(
-  //     path.resolve(pagePath),
-  //     `---\n${fm}---\n\n${header || ''}\n${md}`
-  //   )
-  // }
-  // await createPageFromRemoteMd(
-  //   `https://raw.githubusercontent.com/inkdropapp/inkdrop-model/master/docs/schema.md`,
-  //   `src/pages/reference/data-models.md`,
-  //   {
-  //     index: 20,
-  //     category: 'data',
-  //     path: '/reference/data-models',
-  //     title: 'Data Models'
-  //   },
-  //   {
-  //     header: `* [Book](#a-nameresource-bookbooka)\n* [File](#a-nameresource-filefilea)\n* [Note](#a-nameresource-notenotea)\n* [Tag](#a-nameresource-tagtaga)\n`
-  //   }
-  // )
-}
+
 
 const categories = [
   // 'usage',

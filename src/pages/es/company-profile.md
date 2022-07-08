@@ -1,7 +1,7 @@
 ---
 index: 1
 category: info
-path: /es/faq
+path: /es/faq/
 title: FAQ
 ---
 

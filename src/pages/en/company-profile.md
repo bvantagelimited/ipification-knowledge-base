@@ -1,7 +1,7 @@
 ---
 index: 1
 category: info
-path: /en/company-profile
+path: /en/company-profile/
 title: Company Profile
 ---
 

@@ -1,7 +1,7 @@
 ---
 index: 5
 category: info
-path: /en/ipification-for-operator
+path: /en/ipification-for-operator/
 title: IPification for Operator
 ---
 
