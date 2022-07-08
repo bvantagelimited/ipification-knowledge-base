@@ -36,16 +36,20 @@ const Navigation = () => {
         </Link>
 
         <ul className="app--navbar reset-list un-select">
-          
+        <li>
+          <a href="/en" className="login">
+              <i className="en_language" />
+              EN
+            </a>
+          </li>
           <li>
-           {isEn ? <a href="/es" className="login">
+            <a href="/es" className="login">
               <i className="es_language" />
               ES
-            </a> : <a href="/en" className="login">
-              <i className="en_language" />
-              ES
-            </a>}
+            </a> 
+             
           </li> 
+          
         </ul>
       </div>
     </nav>

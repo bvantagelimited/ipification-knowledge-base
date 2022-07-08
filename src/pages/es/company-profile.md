@@ -1,8 +1,8 @@
 ---
 index: 1
 category: info
-path: /es/company-profile
-title: Company Profile
+path: /es/faq
+title: FAQ
 ---
 
 Siga el enlace del video (8:56) presentado por nuestro CEO, Stefan Kostič.

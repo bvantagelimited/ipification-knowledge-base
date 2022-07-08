@@ -14,13 +14,17 @@ export default class InfopageLayout extends Component {
   }
 
   render() {
+    var isEn = true
+    if(typeof window !== 'undefined'){
+      isEn = ((window.location) || {}).pathname.includes("/es/") ? false: true
+    }
     return (
       <Layout pageTitle={this.props.currentPageTitle}>
         <Breadcrumb
-          middleLevel={{ to: '/', label: 'FAQ' }}
+          middleLevel={{ to: isEn ?'/' : '/es', label: 'FAQ' }}
           currentPageTitle={this.props.currentPageTitle}
         />
-        <Container className="main-content">
+        {isEn ? <Container className="main-content">
           <div className="ui stackable grid">
             <Sidebar className="five wide column">
               <div className="menu-for-larger-screen">
@@ -31,7 +35,16 @@ export default class InfopageLayout extends Component {
               {this.props.children}
             </DocContent>
           </div>
-        </Container>
+        </Container> 
+        : 
+        <Container className="main-content">
+          <div className="ui stackable grid">
+            
+            <DocContent className="wide column">
+              {this.props.children}
+            </DocContent>
+          </div>
+        </Container>}
       </Layout>
     )
   }
