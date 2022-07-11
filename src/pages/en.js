@@ -16,7 +16,7 @@ import { navigate } from 'gatsby'
 
 const IndexPage = () => {
   useEffect(() => {
-    navigate('/en/company-profile');
+    navigate('/en/company-profile/');
   }, []);
 }
 
